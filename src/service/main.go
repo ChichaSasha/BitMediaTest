@@ -8,18 +8,13 @@ import (
 	"github.com/labstack/echo/middleware"
 )
 
-// You will be using this Trainer type later in the program
-type Trainer struct {
-	Name string
-	Age  int
-	City string
-}
-
 func main() {
 	e := echo.New()
 
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
+
+	m := api.Manager("1")
 
 	api.Assemble(e, m)
 

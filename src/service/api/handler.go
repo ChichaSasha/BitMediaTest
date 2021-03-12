@@ -25,7 +25,7 @@ type handler struct {
 
 func (h *handler) users(c echo.Context) error {
 
-	return c.JSON(http.StatusCreated, map[string]string{"id": 1})
+	return c.JSON(http.StatusCreated, map[string]int{"id": 1})
 }
 
 func (h *handler) rating(c echo.Context) error {
