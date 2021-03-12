@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/BitMediaTest/service/api"
+	"github.com/ChichaSasha/BitMediaTest/service/api"
 	"github.com/labstack/echo"
 	"net/http"
 
